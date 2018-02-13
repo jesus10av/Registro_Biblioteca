@@ -334,7 +334,7 @@ public class SequentialFile
     public void writeString(String aString)
     {
         if (firstLineHasBeenWritten)
-            aString = newLine+aString;
+            aString = aString;
             //end if
         else
             firstLineHasBeenWritten = true;
@@ -355,7 +355,7 @@ public class SequentialFile
         //------------
         // se obtiene el String del int
         line = Integer.toString(anInt);
-        writeLine(line);
+        writeLine(line+newLine);
         eof = false;
     }//end writeInt
 

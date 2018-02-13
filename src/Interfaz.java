@@ -10,7 +10,7 @@ public class Interfaz extends Frame implements View {
     Button botonAnterior;
     Button botonSalvar;
     Button botonOrdenar;
-    Button botonBuscar;
+    //Button botonBuscar;
     Button botonModificar;
     Button botonEliminar;
     Button botonLimpiar;
@@ -33,9 +33,9 @@ public class Interfaz extends Frame implements View {
     public Interfaz ()
     {
         Color color;
-        setTitle("");
+        setTitle("ORGANIZACIÓN DE LIBROS");
         setBounds(200, 200, 450, 350);
-        color = new Color(255,50,20);
+        color = new Color(255,255,200);
         setBackground(color);
         setLayout(null);
         construyeComponentes();
@@ -52,7 +52,7 @@ public class Interfaz extends Frame implements View {
         botonLimpiar = new Button("Limpiar");
         botonAgregar = new Button("Agregar");
         botonModificar = new Button("Modificar");
-        botonBuscar = new Button( "Buscar");
+        //botonBuscar = new Button( "Buscar");
 
         botonAnterior.setBounds(20, 260, 100, 30);
         add(botonAnterior);
@@ -70,8 +70,8 @@ public class Interfaz extends Frame implements View {
         add(botonAgregar);
         botonModificar.setBounds(230, 230, 100, 30);
         add(botonModificar);
-        botonBuscar.setBounds(330, 290, 100, 30);
-        add(botonBuscar);
+        //botonBuscar.setBounds(330, 290, 100, 30);
+        //add(botonBuscar);
 
         campoNombre = new TextField();
         campoAutor= new TextField();
@@ -120,7 +120,7 @@ public class Interfaz extends Frame implements View {
         botonLimpiar.addActionListener(theController);
         botonAgregar.addActionListener(theController);
         botonModificar.addActionListener(theController);
-        botonBuscar.addActionListener(theController);
+        //botonBuscar.addActionListener(theController);
     }
 
 
